@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:scrollbarStyle="outsideInset">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <!--  -->
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:src="@drawable/good0"/>
+                <Button
+                        android:id="@+id/btn0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="购买"/>
+            </LinearLayout>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                    android:text="url:"
+                    android:layout_width="100px"
+                    android:layout_height="wrap_content" android:id="@+id/urlText" android:layout_weight="1"
+                    android:singleLine="false"
+                    tools:text="url:"/>
+            <EditText
+                    android:text="https://apigw.gnete.com.hk/easyLinkApi/Payment/Pay"
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:singleLine="false"
+                    android:id="@+id/url" android:layout_weight="1"/>
+        </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="商戶訂單編號:"
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content" android:id="@+id/orderIdText" android:layout_weight="1"
+                        android:singleLine="false"
+                        tools:text="商戶訂單編號:"/>
+                <EditText
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:singleLine="false"
+                        android:id="@+id/orderId" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="訂單生成日期:"
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content" android:id="@+id/orderCreateTimeText" android:layout_weight="1"
+                        android:singleLine="false"
+                        tools:text="訂單生成日期:"/>
+                <EditText
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:singleLine="false"
+                        android:id="@+id/orderCreateTime" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="金額:"
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content" android:id="@+id/txnAmtText" android:layout_weight="1"
+                        android:singleLine="false"
+                        tools:text="金額:"/>
+                <EditText
+                        android:text="1"
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:singleLine="false"
+                        android:id="@+id/amount" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="PIN碼:"
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content" android:id="@+id/pinText" android:layout_weight="1"
+                        android:singleLine="false"
+                        tools:text="PIN碼:"/>
+                <EditText
+                        android:text="hfQNMWXZRBQiiEXSShbNIbSUfPiHKCaK"
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:singleLine="false"
+                        android:id="@+id/pin" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="SecondPin碼:"
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content" android:id="@+id/secPinText" android:layout_weight="1"
+                        android:singleLine="false"
+                        tools:text="SecondPin碼:"/>
+                <EditText
+                        android:text="IaAjQbYLjaDehBgJPcXXURLOXBDMEMii"
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:singleLine="false"
+                        android:id="@+id/secPin" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="渠道編號:"
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content" android:id="@+id/channelText" android:layout_weight="1"
+                        android:singleLine="false"
+                        tools:text="渠道編號:"/>
+                <EditText
+                        android:text="90015"
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:singleLine="false"
+                        android:id="@+id/channel" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="簽名信息:"
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content" android:id="@+id/secretKeyText" android:layout_weight="1"
+                        android:singleLine="false"
+                        tools:text="簽名信息:"/>
+                <EditText
+                        android:text="88888888"
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:singleLine="false"
+                        android:id="@+id/secretKey" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="通知URL:"
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content" android:id="@+id/callbackUrlText" android:layout_weight="1"
+                        android:singleLine="false"
+                        tools:text="通知URL:"/>
+                <EditText
+                        android:text="http://172.16.2.24:8080/easylink-demo/payCompleted"
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:singleLine="false"
+                        android:id="@+id/callbackUrl" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="返回URL:"
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content" android:id="@+id/frontendUrlText" android:layout_weight="1"
+                        android:singleLine="false"
+                        tools:text="返回URL:"/>
+                <EditText
+                        android:text="http://172.16.2.24:8080/easylink-demo/payCompleted"
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:singleLine="false"
+                        android:id="@+id/frontendUrl" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="持卡人IP:"
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content" android:id="@+id/customerIpText" android:layout_weight="1"
+                        android:singleLine="false"
+                        tools:text="持卡人IP:"/>
+                <EditText
+                        android:text="172.0.0.1"
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:singleLine="false"
+                        android:id="@+id/customerIp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="merchantCardNumber:"
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content" android:id="@+id/merchantCardNumberText" android:layout_weight="1"
+                        android:singleLine="false"
+                        tools:text="merchantCardNumber:"/>
+                <EditText
+                    android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:singleLine="false"
+                        android:id="@+id/merchantCardNumber" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:text="merReserved:"
+                        android:layout_width="100px"
+                        android:layout_height="wrap_content" android:id="@+id/merReservedText" android:layout_weight="1"
+                        android:singleLine="false"
+                        tools:text="merReserved:"/>
+                <EditText
+                        android:layout_width="300px"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:singleLine="false"
+                        android:id="@+id/merReserved" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
