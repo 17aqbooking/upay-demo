@@ -21,4 +21,4 @@
 #-renamesourcefileattribute SourceFile
 
 -dontwarn com.unionpay.**
--keep com.unionpay.** {*;}
+-keep class com.unionpay.** {*;}

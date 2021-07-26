@@ -138,7 +138,8 @@ public abstract class BaseActivity extends Activity implements Callback,
             mLoadingDialog.dismiss();
         }
 
-        String tn = "";
+        String tn;
+
 //        if (msg.obj == null || ((String) msg.obj).length() == 0) {
         if (msg.obj == null) {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);

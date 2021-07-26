@@ -1,10 +1,8 @@
 package com.unionpay.uppayplugin.demo;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.widget.TextView;
-import android.widget.Toast;
+
 import com.unionpay.UPPayAssistEx;
 
 public class JARActivity extends BaseActivity {
